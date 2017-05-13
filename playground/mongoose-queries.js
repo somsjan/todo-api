@@ -4,7 +4,7 @@ const {mongoose} = require('./../server/db/mongoose');
 const {Todo} = require('./../server/models/todo');
 const {User} = require('./../server/models/user');
 
-var userId = '59148432789aa82674d6df0822';
+var userId = '59148432789aa82674d6df08';
 
 User.findById(userId).then((user) => {
     if(!user){
