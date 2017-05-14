@@ -8,6 +8,9 @@ var {User} = require('./models/user');
 
 var app = express();
 const port = process.env.PORT || 3000;
+if(process.env.PORT){
+    process.env.MONGODB_URI = 'mongodb://admin:123@ds141401.mlab.com:41401/todo-api';
+}
 
 app.use(bodyParser.json());
 
