@@ -8,7 +8,8 @@ mongoose.Promise = global.Promise;
     var localDB = 'mongodb://localhost:27017/ToDoApp';
     var mLab = 'mongodb://admin:123@ds141401.mlab.com:41401/todo-api';
 
-mongoose.connect(mLab || localDB);
+mongoose.connect(localDB || mLab);
+//mongoose.connect(mLab || localDB);
 
 module.exports = {
     mongoose
